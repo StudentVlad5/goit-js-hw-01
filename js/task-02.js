@@ -12,6 +12,8 @@ resultText += `<li>${getShippingMessage("Australia", 120, 50)}</li>`;
 resultText += `<li>${getShippingMessage("Germany", 80, 20)}</li>`;
 resultText += `<li>${getShippingMessage("Sweden", 100, 20)}</li>`;
 
-console.log(resultText);
+console.log(getShippingMessage("Australia", 120, 50));
+console.log(getShippingMessage("Germany", 80, 20));
+console.log(getShippingMessage("Sweden", 100, 20));
 
 if (resultText) document.querySelector(".result").innerHTML = resultText;

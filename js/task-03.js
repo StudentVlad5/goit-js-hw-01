@@ -14,6 +14,8 @@ resultText += `<li>${getElementWidth("50px", "8px", "4px")}</li>`;
 resultText += `<li>${getElementWidth("60px", "12px", "8.5px")}</li>`;
 resultText += `<li>${getElementWidth("200px", "0px", "0px")}</li>`;
 
-console.log(resultText);
+console.log(getElementWidth("50px", "8px", "4px"));
+console.log(getElementWidth("60px", "12px", "8.5px"));
+console.log(getElementWidth("200px", "0px", "0px"));
 
 if (resultText) document.querySelector(".result").innerHTML = resultText;

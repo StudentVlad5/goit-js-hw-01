@@ -12,7 +12,6 @@ resultText += `<li>${makeTransaction(5, 3000)}</li>`;
 resultText += `<li>${makeTransaction(3, 1000)}</li>`;
 resultText += `<li>${makeTransaction(10, 500)}</li>`;
 
-console.log(resultText);
 console.log(makeTransaction(5, 3000));
 console.log(makeTransaction(3, 1000));
 console.log(makeTransaction(10, 500));
