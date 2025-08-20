@@ -6,19 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task 2</title>
     <link rel="stylesheet" href="css/common.css" />
-    <style>
-      .item {
-        font-weight: 500;
-      }
-
-      .item:not(:last-child) {
-        margin-bottom: 8px;
-      }
-    </style>
   </head>
   <body>
     <p><a href="index.html">Go back</a></p>
 
+    <div>Оголоси функцію getShippingMessage, яка очікує три параметри, значення яких будуть задаватися під час її виклику: • country — перший параметр, рядок, що містить країну доставки • price — другий параметр, число, що містить загальну вартість товару • deliveryFee — третій параметр, число, що містить вартість доставки товару.
+    Доповни код функції так, щоб вона повертала рядок з повідомленням про доставку товару в країну користувача: "Shipping to <country> will cost <totalPrice> credits", де: • <country> — це країни доставки • <totalPrice> — це загальна вартість замовлення, що включає вартість товару і його доставки.
+    Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
+    console.log(getShippingMessage("Australia", 120, 50)); // "Shipping to Australia will cost 170 credits"
+    console.log(getShippingMessage("Germany", 80, 20)); // "Shipping to Germany will cost 100 credits"
+    console.log(getShippingMessage("Sweden", 100, 20)); // "Shipping to Sweden will cost 120 credits"</div>
+    <p> function getShippingMessage(country, price, deliveryFee) {return country.length > 0 && !isNaN(Number(price)) && !isNaN(Number(deliveryFee)) ? `Shipping to ${country} will cost ${price + deliveryFee} credits` : "Wrong parameters";}</p>
     <ul class="result"></ul>
 
     <script src="js/task-02.js" type="module"></script>
